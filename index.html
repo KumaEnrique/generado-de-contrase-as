@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GENERADOR DE CONTRASEÑAS ADAPTABLE</title>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <p>luis kuman</p>
+        </div>
+        <form action="#" id="formulario">
+
+            <div class="fila caracteres ">
+                <div class="col1">
+                    <label for="">Caracteres</label>
+                </div>
+                <div class="col2 ">
+                    <button id="mas">mas</button>
+                    <input type="text" id="caracteres" value="12" readonly>
+                    <button id="menos">menos</button>
+                </div>
+            </div>
+            <div class="fila numeros">
+                <div class="col1 ">
+                    <label for="numeros">Numeros?</label>
+                </div>
+                <div class="col2 ">
+                    <input type="button" value="si" id="numeros">
+                </div>
+            </div>
+            <div class="fila mayusculas">
+                <div class="col1 ">
+                    <label for="mayusculas">Mayusculas?</label>
+                </div>
+                <div class="col2 ">
+                    <input type="button" value="si" id="mayusculas">
+                </div>
+            </div>
+            <div class="fila simbolos">
+                <div class="col1 ">
+                    <label for="simbolos">Simbolos?</label>
+                </div>
+                <div class="col2 ">
+                    <input type="button" value="si" id="simbolos">
+                </div>
+            </div>
+            <div class="fila generar">
+                <div class="col1 ">
+                    <button id="generar">Generar</button>
+                </div>
+                <div class="col2 ">
+                    <input type="text" id="inputGenerar">
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
