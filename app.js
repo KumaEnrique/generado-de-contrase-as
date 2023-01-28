@@ -10,11 +10,13 @@
             numeros: true,
             mayusculas: true,
             simbolos: true,
+            simbolos2: true,
             minusculas: true
         },
         caracteres = {
             numeros: '0 1 2 3 4 5 6 7 8 9',
-            simbolos: '! @ # $ % ^ & * ( ) _ - + = { [ } ] ; : < , > . ? / ─ · ^ ¨ ~ | ° ¬ · @ ¸ æ « » ß ł € ð ¢ đ ¶ t ŧ ŋ ħ ← ↓ µ → ł ø',
+            simbolos: '! @ # ¡ ? ¿ & * ( ) _ - + = { [ } ] ; : < , > . ? /',
+            simbolos2: '^ ─ · ¨ ~ | ° ¬ · ¸ æ « » ß ł € ð ¢ đ ¶ t ŧ ŋ ħ ← ↓ µ → ł ø £ ¢ % € © • ¥ ® √ ™ π ✓ ÷ = × ¶ ∆ ⟩ › \\',
             mayusculas: 'A B C D E F G H I J K L M N O P Q R S T U V W X Y Z',
             minusculas: 'a b c d e f g h i j k l m n o p q r s t u v w x y z'
         },
@@ -48,9 +50,9 @@
         function letras(e){
             const referencia=e.target.id;
             if ((e.target.nodeName==='INPUT' || e.target.type==='button') && e.target.value==="si"){
-            e.target.value="no"
-            newConfiguracion=!configuracion[referencia]
-            configuracion[referencia]=newConfiguracion
+                e.target.value="no"
+                newConfiguracion=!configuracion[referencia]
+                configuracion[referencia]=newConfiguracion
             }
             else if ((e.target.nodeName==='INPUT' || e.target.type==='button') && e.target.value==="no"){
                 e.target.value= "si"
